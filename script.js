@@ -1,23 +1,8 @@
 function fibonacci(num) {
-
-	if(num === 0){
-		return 0;
-	}
-	else if(num == 1){
-		return 1;
-	}
-
-	else{
-let a = 0;
-	let b = 1;
-	let c;
-	for(int i = 2;i<=num;i++){
-	      c = a+b;
-		b = c;
-		a = b;
-	}
-	return c;
-	}
-}
+if(num == 0)return 0;
+	if(num == 1)return 1;
+return fibanocci(num-1)+fibonacci(num-2);
+	
+	
 
 module.exports = fibonacci;
